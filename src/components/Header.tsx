@@ -4,11 +4,11 @@ export default function Header() {
   return (
     <div className="flex justify-between px-3 h-[60px] items-center sticky drop-shadow bg-white">
       <img
-        src="./../../src/assets/images/study4_new_logo_sm.png"
+        src="./../../src/assets/images/img_study4.png"
         alt="logo_study4"
         className="h-9"
       />
-      <ul className="flex text-[14px] text-gray font-[600] items-center">
+      <ul className="flex text-[14px] text-gray-h font-[600] items-center">
         <li>
           <a href="" className="px-2 py-2">
             Giới thiệu

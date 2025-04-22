@@ -5,10 +5,11 @@ export default {
     extend: {
       colors: {
         "dark-blue": "#35509A",
-        gray: "#71869D",
+        "gray-h": "#71869D",
+        gray: "#677788",
       },
-      boxShadowColor: {
-        mm: "rgb(0 0 0 / 0.5)",
+      width: {
+        page: "1145px",
       },
     },
   },
