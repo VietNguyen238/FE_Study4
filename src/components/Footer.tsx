@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="flex justify-center w-full text-gray">
+    <div className="flex justify-center w-full text-gray pb-12 pt-6 shadow-top">
       <div className="w-page">
         <div className="flex mb-4 gap-3 text-white font-semibold text-[10px]">
           <div className="bg-[#1a77f2] px-2 py-[2px] rounded flex gap-[2px] h-[19px]">
