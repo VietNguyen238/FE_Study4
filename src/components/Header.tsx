@@ -7,7 +7,7 @@ export default function Header() {
         <img
           src="./../../src/assets/images/img_study4.png"
           alt="logo_study4"
-          className="h-9"
+          className="h-[35px]"
         />
       </a>
       <ul className="flex text-[14px] text-gray-h font-[600] items-center">
