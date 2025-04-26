@@ -1,4 +1,5 @@
 import React from "react";
+import Tag from "./Tag";
 
 interface Props {
   index: number;
@@ -64,9 +65,7 @@ export default function CourseCard({
           <div>({student})</div>
           <div className="pl-2">{quantity} Học viên</div>
         </div>
-        <div className="text-dark-blue rounded-full py-1 px-3 bg-blue-100 w-max text-[12px] my-2">
-          #Phần mềm online
-        </div>
+        <Tag title="Phần mềm online" />
         <div className="flex gap-2">
           <div className="text-green-500 font-semibold">{newPrice}đ</div>
           <div className="font-medium line-through">{originalPrice}đ</div>

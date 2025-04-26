@@ -5,11 +5,13 @@ export default {
     extend: {
       colors: {
         "dark-blue": "#35509A",
+        "dark-blue-h": "#194c73",
         "gray-h": "#71869D",
         gray: "#677788",
         link: "#35509A",
         black: "#1A1A1A",
         box: "rgb(0 0 0 / 0.1)",
+        card: "#f8f9fb",
       },
       width: {
         page: "1145px",

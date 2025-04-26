@@ -3,8 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import CourseCard from "../components/ui/CourseCard";
 import Slideshow from "../components/ui/Slideshow";
-import { images, image, itemsCard } from "../config/data";
+import { images, image, itemsCard, topic } from "../config/data";
 import AdviseForm from "../components/ui/AdviseForm";
+import TopicCard from "../components/ui/TopicCard";
 
 export default function Home() {
   return (
@@ -66,6 +67,25 @@ export default function Home() {
         </div>
       </div>
       <Slideshow images={image} width="w-page" />
+      <div className="flex flex-col justify-center items-center">
+        <div className="text-[28px] font-semibold text-black pb-5 pt-8">
+          Đề thi mới nhất
+        </div>
+        <div className="grid grid-cols-4 gap-5">
+          {topic.map((item, index) => (
+            <TopicCard
+              title={item.title}
+              exam={item.exam}
+              key={index}
+              message={item.message}
+              person={item.person}
+              question={item.question}
+              time={item.time}
+            />
+          ))}
+        </div>
+      </div>
+
       <div
         className="flex justify-center py-14 bg-slate-400 w-full mt-12"
         style={{

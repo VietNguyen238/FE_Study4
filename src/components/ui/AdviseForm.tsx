@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./Button";
 
 interface Props {
   title?: string;
@@ -88,12 +89,7 @@ export default function AdviseForm({ title, width }: Props) {
         <option value="Tiếng Anh cơ bản">Tiếng Anh cơ bản</option>
         <option value="HSK">HSK</option>
       </select>
-      <button
-        type="submit"
-        className="bg-dark-blue font-semibold w-full rounded-md px-3 py-[6px] mb-4 text-white text-center"
-      >
-        Đăng ký tư vấn miễn phí
-      </button>
+      <Button title="Đăng ký tư vấn miễn phí" />
     </form>
   );
 }
