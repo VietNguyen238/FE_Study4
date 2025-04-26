@@ -22,7 +22,7 @@ export default function CourseCard({
   const percent = (originalPrice / newPrice) * 100;
   console.log(percent);
   return (
-    <div key={index} className="shadow-card rounded-lg my-3">
+    <div key={index} className="shadow-card border border-box rounded-lg my-3">
       <img
         className="rounded-t-lg"
         src={`./../../../src/assets/images/${image}`}

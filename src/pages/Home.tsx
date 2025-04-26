@@ -1,9 +1,10 @@
-import { Virtual } from "swiper/modules";
+import { Virtual, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import CourseCard from "../components/ui/CourseCard";
 import Slideshow from "../components/ui/Slideshow";
 import { images, image, itemsCard } from "../config/data";
+import AdviseForm from "../components/ui/AdviseForm";
 
 export default function Home() {
   return (
@@ -15,11 +16,10 @@ export default function Home() {
 
       <div className="relative w-page h-full py-4">
         <Swiper
-          modules={[Virtual]}
+          modules={[Virtual, Pagination]}
           spaceBetween={24}
           slidesPerView={3}
-          // centerInsufficientSlides={true}
-
+          pagination={{ clickable: true }}
           virtual
         >
           {itemsCard.map((item, index) => (
@@ -36,6 +36,9 @@ export default function Home() {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+      <div className="my-10">
+        <AdviseForm />
       </div>
       <Slideshow images={image} width="w-page" />
     </div>
