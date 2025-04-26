@@ -18,6 +18,7 @@ export default {
       boxShadow: {
         top: "0 -1px 10px 0 rgb(0 0 0 / 0.1)",
         bottom: "0 1px 10px 0 rgb(0 0 0 / 0.1)",
+        hover: "0 0 10px 3px rgb(0 0 0 / 0.1)",
         card: "0 3px rgb(0 0 0 / 0.1)",
       },
     },

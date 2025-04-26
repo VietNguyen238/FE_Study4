@@ -19,10 +19,13 @@ export default function CourseCard({
   newPrice,
   originalPrice,
 }: Props) {
-  const percent = (originalPrice / newPrice) * 100;
-  console.log(percent);
+  const percent = Math.floor(100 - (newPrice / originalPrice) * 100);
+
   return (
-    <div key={index} className="shadow-card border border-box rounded-lg my-3">
+    <div
+      key={index}
+      className="shadow-card border border-box rounded-lg my-3 hover:shadow-hover transition-all duration-300 hover:-translate-y-0.5"
+    >
       <img
         className="rounded-t-lg"
         src={`./../../../src/assets/images/${image}`}
@@ -67,6 +70,9 @@ export default function CourseCard({
         <div className="flex gap-2">
           <div className="text-green-500 font-semibold">{newPrice}đ</div>
           <div className="font-medium line-through">{originalPrice}đ</div>
+          <div className="flex font-bold bg-red-600 text-white text-[12px] items-center justify-center px-2 rounded-lg">
+            - {percent}%
+          </div>
         </div>
       </div>
     </div>
