@@ -8,13 +8,16 @@ export default {
         "gray-h": "#71869D",
         gray: "#677788",
         link: "#35509A",
+        black: "#1A1A1A",
       },
       width: {
         page: "1145px",
+        card: "381.66px",
       },
       boxShadow: {
         top: "0 -1px 10px 0 rgb(0 0 0 / 0.1)",
         bottom: "0 1px 10px 0 rgb(0 0 0 / 0.1)",
+        card: "0 5px 2px 2px rgb(0 0 0 / 0.1)",
       },
     },
   },
