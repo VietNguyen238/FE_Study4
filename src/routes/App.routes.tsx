@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../components/layout/Layout";
 import Home from "../pages/Home";
 import Introduce from "../pages/Introduce";
+import StudyProgram from "../pages/StudyProgram";
 
 export default function AppRoute() {
   return (
@@ -20,6 +21,14 @@ export default function AppRoute() {
           element={
             <Layout>
               <Introduce />
+            </Layout>
+          }
+        />
+        <Route
+          path="study-program"
+          element={
+            <Layout>
+              <StudyProgram />
             </Layout>
           }
         />

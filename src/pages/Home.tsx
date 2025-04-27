@@ -44,7 +44,7 @@ export default function Home() {
           <div className="flex flex-col w-[756px] text-black gap-2">
             <p>
               Các{" "}
-              <a href="/courses/online/" className="text-link">
+              <a href="/study-program/" className="text-link">
                 phần mềm luyện thi IELTS, TOEIC, HSK online
               </a>{" "}
               chất lượng cao của STUDY4 đều được thiết kế sát format thi thật,

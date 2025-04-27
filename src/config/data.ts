@@ -125,3 +125,32 @@ export const itemsCard = [
     originalPrice: 899000,
   },
 ];
+
+export const lable = [
+  {
+    lable: "TOEIC",
+    href: "#toeic",
+  },
+  {
+    lable: "IELTS Academic",
+    href: "#ieltsacademic",
+  },
+  {
+    lable: "IELTS General",
+    href: "#ieltsgeneral",
+  },
+  {
+    lable: "IELTS Writing and Speaking",
+    href: "#ieltswritingandspeaking",
+  },
+  {
+    lable: "Tiếng Anh cơ bản",
+    href: "#tiếnganhcơbản",
+  },
+  {
+    lable: "HSK",
+    href: "#hsk",
+  },
+];
+
+export const studyProgram = [{}];

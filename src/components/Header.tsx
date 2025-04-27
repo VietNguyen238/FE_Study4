@@ -17,7 +17,7 @@ export default function Header() {
           </a>
         </li>
         <li>
-          <a href="" className="px-2 py-2">
+          <a href="study-program" className="px-2 py-2">
             Chương trình học
           </a>
         </li>
